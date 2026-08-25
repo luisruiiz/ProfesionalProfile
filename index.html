@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luis Humberto Ruiz Escobar · Software Engineer</title>
+<meta name="description" content="Luis Humberto Ruiz Escobar - Ingeniero en Desarrollo y Gestión de Software. Python, Django, Flask, JavaScript.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%236c5ce7%22>L</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="navbar" id="navbar">
+  <nav class="nav-container">
+    <a href="#home" class="logo">LR<span class="logo-dot">.</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Habilidades</a></li>
+      <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+        <span class="lang-option active" data-lang-option="es">ES</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-option" data-lang-option="en">EN</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero kept in its editorial/paper styling on purpose; every other section below uses the original dark theme -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <span class="hero-watermark">LR</span>
+    </div>
+    <span class="hero-tab" data-i18n="hero.tab">registro</span>
+
+    <div class="hero-content">
+      <p class="hero-greeting reveal" data-i18n="hero.greeting">Hola, soy</p>
+      <h1 class="hero-name reveal">Luis Humberto<br>Ruiz Escobar</h1>
+      <div class="hero-role reveal">
+        <span id="typedRole"></span><span class="cursor">_</span>
+      </div>
+      <p class="hero-tagline reveal" data-i18n="hero.tagline">
+        Construyo aplicaciones web y de escritorio robustas, desde el backend hasta el análisis de datos.
+      </p>
+
+      <dl class="hero-meta reveal">
+        <div class="hero-meta-row">
+          <dt data-i18n="hero.stackLabel">stack</dt>
+          <dd>Python · Django · Flask · JavaScript · PostgreSQL</dd>
+        </div>
+        <div class="hero-meta-row">
+          <dt data-i18n="hero.statusLabel">estado</dt>
+          <dd class="status-ok" data-i18n="about.fact3">Disponible para nuevas oportunidades</dd>
+        </div>
+      </dl>
+
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">Ver proyectos</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero.ctaContact">Contactarme</a>
+      </div>
+
+      <div class="hero-socials reveal">
+        <a href="https://github.com/LuisRuiz12" target="_blank" rel="noopener" aria-label="GitHub"><i class="devicon-github-original"></i></a>
+        <a href="https://www.linkedin.com/in/luis-humberto-ruiz-escobar" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="devicon-linkedin-plain colored"></i></a>
+        <a href="mailto:luisruiz2.1@outlook.es" aria-label="Email" class="mail-icon">✉</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+      <span></span>
+    </a>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-tag reveal" data-i18n="about.tag">Sobre mí</p>
+      <h2 class="section-title reveal" data-i18n="about.title">Un poco de mi historia</h2>
+
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="avatar-frame">
+            <div class="avatar-placeholder">LR</div>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p data-i18n="about.p1">
+            Soy Ingeniero en Desarrollo y Gestión de Software, apasionado por construir soluciones
+            funcionales y eficientes. Disfruto trabajar tanto en el backend con Python (Django y Flask)
+            como en la creación de interfaces claras y usables.
+          </p>
+          <p data-i18n="about.p2">
+            Tengo experiencia con bases de datos relacionales (PostgreSQL, MySQL, SQLite), análisis y
+            visualización de datos con Power BI, y desarrollo bajo entornos Linux. Me gusta aprender
+            tecnologías nuevas y aplicar buenas prácticas en cada proyecto.
+          </p>
+
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-icon">🎓</span>
+              <span data-i18n="about.fact1">Ing. en Desarrollo y Gestión de Software</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon">💻</span>
+              <span data-i18n="about.fact2">Backend, bases de datos y análisis de datos</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon">🌎</span>
+              <span data-i18n="about.fact3">Disponible para nuevas oportunidades</span>
+            </div>
+          </div>
+
+          <a href="mailto:luisruiz2.1@outlook.es" class="btn btn-primary" data-i18n="about.cta">Hablemos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <p class="section-tag reveal" data-i18n="skills.tag">Habilidades</p>
+      <h2 class="section-title reveal" data-i18n="skills.title">Tecnologías con las que trabajo</h2>
+
+      <div class="skills-grid" id="skillsGrid">
+        <div class="skill-card reveal"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="skill-card reveal"><i class="devicon-django-plain"></i><span>Django</span></div>
+        <div class="skill-card reveal"><i class="devicon-flask-original"></i><span>Flask</span></div>
+        <div class="skill-card reveal"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="skill-card reveal"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <div class="skill-card reveal"><i class="devicon-csharp-plain colored"></i><span>C#</span></div>
+        <div class="skill-card reveal"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+        <div class="skill-card reveal"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+        <div class="skill-card reveal"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+        <div class="skill-card reveal"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+        <div class="skill-card reveal"><i class="devicon-linux-plain"></i><span>Linux</span></div>
+        <div class="skill-card reveal"><i class="devicon-git-plain colored"></i><span>Git / GitHub</span></div>
+      </div>
+
+      <div class="skills-secondary reveal">
+        <p data-i18n="skills.alsoWith">También trabajo con:</p>
+        <div class="pill-list">
+          <span class="pill">Power BI</span>
+          <span class="pill">Microsoft Office</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">Git Workflow</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-tag reveal" data-i18n="projects.tag">Proyectos</p>
+      <h2 class="section-title reveal" data-i18n="projects.title">Trabajo reciente en GitHub</h2>
+      <p class="section-subtitle reveal" data-i18n="projects.subtitle">
+        Cargado en vivo desde mi perfil de GitHub.
+      </p>
+
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-skeleton"></div>
+        <div class="project-skeleton"></div>
+        <div class="project-skeleton"></div>
+      </div>
+
+      <div class="projects-more reveal">
+        <a href="https://github.com/LuisRuiz12?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="projects.viewAll">Ver todos en GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <p class="section-tag reveal" data-i18n="contact.tag">Contacto</p>
+      <h2 class="section-title reveal" data-i18n="contact.title">Hablemos de tu próximo proyecto</h2>
+      <p class="section-subtitle reveal" data-i18n="contact.subtitle">
+        Escríbeme directamente o usa el formulario y te responderé lo antes posible.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="contact-item" href="mailto:luisruiz2.1@outlook.es">
+            <span class="contact-icon">✉️</span>
+            <span>
+              <strong data-i18n="contact.emailLabel">Correo</strong>
+              <small>luisruiz2.1@outlook.es</small>
+            </span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/luis-humberto-ruiz-escobar" target="_blank" rel="noopener">
+            <span class="contact-icon"><i class="devicon-linkedin-plain colored"></i></span>
+            <span>
+              <strong>LinkedIn</strong>
+              <small data-i18n="contact.linkedinLabel">Conectemos</small>
+            </span>
+          </a>
+          <a class="contact-item" href="https://github.com/LuisRuiz12" target="_blank" rel="noopener">
+            <span class="contact-icon"><i class="devicon-github-original"></i></span>
+            <span>
+              <strong>GitHub</strong>
+              <small data-i18n="contact.githubLabel">Revisa mi código</small>
+            </span>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <label for="name" data-i18n="contact.form.name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email" data-i18n="contact.form.email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message" data-i18n="contact.form.message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">
+            <span data-i18n="contact.form.send">Enviar mensaje</span>
+          </button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Luis Humberto Ruiz Escobar. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/github.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
