@@ -1,4 +1,4 @@
-const GITHUB_USERNAME = 'LuisRuiz12';
+const GITHUB_USERNAME = 'luisruiiz';
 const MAX_REPOS = 6;
 
 let cachedRepos = null;
